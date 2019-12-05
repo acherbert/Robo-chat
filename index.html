@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+   body{
+	padding: 0;
+	margin: 0;
+	background: rgba(39,41, 44); 
+	font-family: 'Dosis', sans-serif;
+}
+
+.container{
+	height: 520px;
+	width: 400px;
+	background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.9)), url(https://qph.fs.quoracdn.net/main-qimg-8b585fb4a5c9fedbb899cfb0cf0331a7);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	box-shadow: 0 0 5px 0 black;
+	transform: translate(-50%,-50%);
+		
+}
+p{
+	margin: 10px;
+}
+
+
+
+
+.container .display{
+	overflow: auto;
+	height: 400px
+}
+
+
+
+
+.container .tray{
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+	height: 50px;
+	border-top: 1px solid #111;
+}
+.container .tray img{
+	color: #fff;
+}
+
+.container .tray .fa{
+	color: #fff;
+	font-size: 21px;
+	line-height: 30px;
+	text-align: center;
+	margin: 10px;
+	width: 30px;
+	cursor: pointer;
+
+}
+.container .tray .text{
+	position: relative;
+	width: 70%;
+	height: 30px;
+	display: inline-block;
+}
+
+.container .tray .text input{
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border: none;
+	padding: 10px;
+	background: #111;
+	outline: none;
+	color: #fff;
+
+}
+
+
+
+.container .header{
+	height: 70px;
+	width: 90%;
+	color: #fff;
+	line-height: 70px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #555;
+	margin: 0 5%;
+}
+.container .header h1{
+	font-size: 30px;
+	display: inline;
+	font-size: 25px;
+	line-height: 70px;
+	font-weight: 300;
+	margin-left: 130px;
+}
+.container .header .avatar{
+	height: 35px;
+	width: 35px;
+	background: url(https://www.stickpng.com/assets/images/580b57fbd9996e24bc43be01.png);
+	background-size: cover;
+	display: inline-block;
+	position: absolute;
+	right: 40px;
+	top: 17px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+
+
+
+.container .display .msg{
+	margin: 10px 20px;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.6);
+	width: 200px;
+	box-sizing: border-box;
+	padding: 1px 5px;
+	border-radius: 0 20px 20px 20px;
+	line-height: 1;	
+	border: 1px solid #48b5ad;
+}
+
+.container .display .reply{
+	margin: 20px 180px;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.6);
+	width: 200px;
+	line-height: 1;
+	box-sizing: border-box;
+	padding: 1px 15px;
+	border-radius: 20px 20px 0px 20px;
+	border: 1px solid #48b5ad;
+
+}
+
+.lds-ellipsis {
+	display: inline-block;
+	position: relative;
+	width: 64px;
+	height: 64px;
+	margin: -10px 300px;
+	margin-right: 0;
+  }
+  .lds-ellipsis div {
+	position: absolute;
+	top: 27px;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	background: #fff;
+	animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+	left: 6px;
+	animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+	left: 6px;
+	animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+	left: 26px;
+	animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+	left: 45px;
+	animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+	0% {
+	  transform: scale(0);
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
+  @keyframes lds-ellipsis3 {
+	0% {
+	  transform: scale(1);
+	}
+	100% {
+	  transform: scale(0);
+	}
+  }
+  @keyframes lds-ellipsis2 {
+	0% {
+	  transform: translate(0, 0);
+	}
+	100% {
+	  transform: translate(19px, 0);
+	}
+  }
+  
+
+  ::-webkit-scrollbar {
+	width: 2px;
+  }
+  
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+	background: #000; 
+	border-radius: 10px;
+  }
+
+    
+    </style>
+	<title>RoboChat: Random Chat Bot</title>
+	<link href="https://fonts.googleapis.com/css?family=Dosis:300" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h3>RoboChat: Random Chat Bot</h3>
+			<div class="avatar"></div>
+		</div>
+		<div class="display">
+		</div>
+		<div class="tray">
+			<form>
+			<i class="fa fa-envelope-open" aria-hidden="true"></i>
+			<div class="text">
+				<input placeholder="Say Something...."></input>
+			</div>
+			<i class="fa fa-paper-plane"></i>
+		</div>
+	</div>
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
